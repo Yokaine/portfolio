@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "title": "Portfolio GitHub",
+    "description": "Portfolio dynamique qui récupère automatiquement le profil et les dépôts d'un utilisateur GitHub via l'API et les affiche sous forme de cartes. Version statique déployée sur GitHub Pages, avec un mode démo si l'API est indisponible. Interface responsive (PC et mobile), tests et intégration continue (GitHub Actions).",
+    "stack": [
+      "Symfony",
+      "PHP",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "API GitHub",
+      "GitHub Pages",
+      "GitHub Actions"
+    ],
+    "image": "images/scr1G.png",
+    "code": "https://github.com/Yokaine/portfolio-github",
+    "demo": "https://yokaine.github.io/portfolio-github/"
+  },
+  {
+    "id": 2,
+    "title": "Galerie des projets",
+    "description": "Galerie web pour présenter les projets d'étudiants, avec filtrage par catégorie, fiches projet détaillées (visuels et documents PDF) et espace d'administration sécurisé pour gérer projets, catégories et étudiants.",
+    "stack": [
+      "Symfony",
+      "PHP",
+      "Doctrine ORM",
+      "Twig",
+      "JavaScript",
+      "CSS",
+      "Docker"
+    ],
+    "image": "images/scr1P.png",
+    "code": "https://github.com/Yokaine/galerie-projets-nws"
+    
+    
+  },
+  {
+    "id": 3,
+    "title": "The NWS Challenge",
+    "description": "Plateforme de mini-jeux (puzzle) avec classement des scores, lecteur de musique et système de comptes (inscription, connexion, réinitialisation du mot de passe). Un back-office permet de gérer les jeux, les scores et les utilisateurs.",
+    "stack": [
+      "Symfony",
+      "PHP",
+      "Doctrine ORM",
+      "Twig",
+      "JavaScript",
+      "CSS"
+    ],
+    "image": "images/scr1N.png",
+    "code": "https://github.com/Yokaine/nws-challenge"
+  }
+]
