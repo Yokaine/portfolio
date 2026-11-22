@@ -31,7 +31,8 @@
       "Docker"
     ],
     "image": "images/scr1P.png",
-    "code": "https://github.com/Yokaine/galerie-projets-nws"
+    "code": "https://github.com/Yokaine/galerie-projets-nws",
+    "demo": "https://yokaine.github.io/galerie-projets-nws/"
     
     
   },
@@ -48,6 +49,7 @@
       "CSS"
     ],
     "image": "images/scr1N.png",
-    "code": "https://github.com/Yokaine/nws-challenge"
+    "code": "https://github.com/Yokaine/galerie-projets-nws",
+    "demo": "https://yokaine.github.io/nws-challenge/"
   }
 ]
