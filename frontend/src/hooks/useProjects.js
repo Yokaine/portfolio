@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 
 const API = import.meta.env.VITE_API_URL
 const STATIC_FILE = `${import.meta.env.BASE_URL}projects.json`
@@ -13,9 +13,12 @@ function load(url) {
 export function useProjects() {
   const [projects, setProjects] = useState([])
   const [status, setStatus] = useState('loading')
+  const [attempt, setAttempt] = useState(0)
 
   useEffect(() => {
     let ignore = false
+    setStatus('loading')
+
     const request = API
       ? load(`${API}/api/projects`).catch(() => load(STATIC_FILE))
       : load(STATIC_FILE)
@@ -33,7 +36,9 @@ export function useProjects() {
     return () => {
       ignore = true
     }
-  }, [])
+  }, [attempt])
 
-  return { projects, status }
+  const retry = useCallback(() => setAttempt((n) => n + 1), [])
+
+  return { projects, status, retry }
 }
